@@ -21,6 +21,7 @@
 	<script src="js/modules/jquery-1.11.1.min.js"></script>
 	<script type="text/javascript" src="js/modules//move-top.js"></script>
 	<script type="text/javascript" src="js/modules/easing.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular-sanitize.js"></script>
 
 	<!-- ANGULAR CUSTOM -->
 	<script src="js/controllers/MainCtrl.js"></script>
@@ -48,11 +49,11 @@
 <body ng-app="sampleApp" ng-controller="MainController">
 	<!-- header -->
 	<div class="header">
-		<nav class="navbar navbar-inverse">
-			<div class="navbar-header">
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-header pull-left">
 				<a class="navbar-brand" href="/">Home</a>
 			</div>
-			<div class="navbar-header">
+			<div class="navbar-header pull-left">
 				<a class="navbar-brand" href="/profile">Profile</a>
 			</div>
 			<div class="navbar-header pull-right">
@@ -61,7 +62,7 @@
 		</nav>
 	</div>
 	<!-- //header -->
-	<div ng-view></div>
+	<div ng-view class="view"></div>
 	<!--contact -->
 	<div class="welcome contact" id="contact">
 		<div class="container">
@@ -73,11 +74,11 @@
 				</div>
 				<div class="col-md-6 contact-right">
 					<div class="address-left">
-						<p>Koramangala, Bangalore - 560047<br> KA, India. </p>
+						<p>{{address.street}}<br> {{address.state}} </p>
 					</div>
 					<div class="address-right">
-						<p>Call us :  +91 88847 15911</p>
-						<p>E-mail : <a href="mailto:manishrw@yahoo.com">manishrw@yahoo.com</a></p>
+						<p>Call us :  {{phone}}</p>
+						<p>E-mail : <a href="mailto:{{mail}}">{{mail}}</a></p>
 					</div>
 					<div class="clearfix"></div>
 					<div class="contact-form">
@@ -100,10 +101,10 @@
 		<div class="container">
 			<p>© 2016 @manishrw
 				<span class="falinks">
-					<a href="https://www.linkedin.com/in/manishrw"><i class="fa fa-linkedin" ></i></a>
-					<a href="https://twitter.com/manishrw"><i class="fa fa-twitter"></i></a>
-					<a href="skype:manishsvnit007"><i class="fa fa-skype"></i></a>
-					<a href="https://github.com/manishrw/"><i class="fa fa-github"></i></a>
+					<a href="{{social.linkedin}}"><i class="fa fa-linkedin" ></i></a>
+					<a href="{{social.twitter}}"><i class="fa fa-twitter"></i></a>
+					<a href="{{social.skype}}"><i class="fa fa-skype"></i></a>
+					<a href="{{social.github}}"><i class="fa fa-github"></i></a>
 				</span>
 			</p>
 		</div>
