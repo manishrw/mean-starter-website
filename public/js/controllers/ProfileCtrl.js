@@ -1,7 +1,7 @@
 angular.module('ProfileCtrl', ['ngSanitize']).controller('ProfileController', function($scope) {
 
 	$scope.name = 'Manish Wadhwani';
-	$scope.title = 'Software Developer / Philosopher';
+	$scope.title = 'Software Engineer / Philosopher';
 	$scope.dob = '06-12-1991';
 	$scope.phone = '+91 88847 15911';
 	$scope.address = {street: 'Koramangala, Bangalore - 560047', state: 'KA, India.'};
@@ -14,7 +14,7 @@ angular.module('ProfileCtrl', ['ngSanitize']).controller('ProfileController', fu
 		github: 'https://github.com/manishrw/'
 	};
 
-	$scope.aboutus = '<p>I am an enthusiastic software engineer and a philosopher. I like to build new technology and play around. Currently working in Medibox R&D, Bangalore as Software Engineer, I am involved with designing and developing scalable applications, providing solutions to proactively enforce security through out cloud infrastructure, and develop BI framework.</p><br><p>I\'ve been associated and involved with computers through out my life. Among other stuff, I like to play sports(primarily badminton and lawn tennis), read books, surf blogs and articles. I personally like to research on various topics especially those pertaining to science, technology and philosophy.</p>';
+	$scope.aboutus = '<p>I am an enthusiastic software engineer and a philosopher. I like to build new technology and play around. Currently working in Microsoft R&D, Hyderabad as Software Engineer. </p><br><p>I\'ve been associated and involved with computers through out my life. Among other stuff, I like to play sports(primarily badminton and lawn tennis), read books, surf blogs and articles. I personally like to research on various topics especially those pertaining to science, technology and philosophy.</p>';
 	$scope.awards = [
 		'Runner up in IBM Techathon, 2013',
 		'AIR 63 in ACM ICPC regionals, 2012',
@@ -25,6 +25,11 @@ angular.module('ProfileCtrl', ['ngSanitize']).controller('ProfileController', fu
 	];
 
 	$scope.workInfo = [{
+		year: 'July 2016 - Present ',
+		company: ' Microsoft R&D India Pvt. Ltd. ',
+		role: ' Software Engineer',
+		description: ''
+	}, {
 		year: 'April 2015 - June 2016 ',
 		company: ' Medibox Technologies LLP ',
 		role: ' Software Developer',
