@@ -4,7 +4,7 @@ angular.module('ProfileCtrl', ['ngSanitize']).controller('ProfileController', fu
 	$scope.title = 'Software Engineer / Philosopher';
 	$scope.dob = '06-12-1991';
 	$scope.phone = '+91 88847 15911';
-	$scope.address = {street: 'Koramangala, Bangalore - 560047', state: 'KA, India.'};
+	$scope.address = {street: 'Gachibowli, Hyderabad - 500032', state: 'TS, India.'};
 	$scope.mail = 'manishrw@yahoo.com';
 	$scope.blog = {url: 'https://manishrw.blogspot.in', title: 'manishrw blogspot'};
 	$scope.social = {
