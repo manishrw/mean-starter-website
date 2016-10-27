@@ -12,7 +12,7 @@ body a{
 	text-decoration:none;
 }
 h1,h2,h3,h4,h5,h6{
-	margin:0;	
+	margin:0;
 	font-family: 'Overlock', cursive;
 }
 p{
@@ -32,7 +32,7 @@ body a:hover{
 }
 /*--view--*/
 .view{
-    margin-top:3.5%;
+    margin-top: 50px;
 }
 /*--baner--*/
 .banner {
@@ -291,7 +291,7 @@ p {
     margin-bottom: 2.2em;
     background-color: #2F2C06;
 }
-.progress-bar { 
+.progress-bar {
     background-color: #766E04;
 }
 .bar-grids h6 {
@@ -306,7 +306,7 @@ p {
 /*--//skills--*/
 /*--portfolio--*/
 /*--SAP--*/
-ul.resp-tabs-list {  
+ul.resp-tabs-list {
 /*-- w3layouts --*/
 background: #F7E612;
 }
@@ -364,7 +364,7 @@ background: #F7E612;
 }
 .resp-tabs-container {
 	padding: 0px;
-	clear: left;	
+	clear: left;
 }
 h2.resp-accordion {
 	cursor: pointer;
@@ -434,7 +434,7 @@ h2.resp-accordion {
 	-moz-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 	-o-transform: translate3d(0,0,0);
-	-ms-transform: translate3d(0,0,0);	
+	-ms-transform: translate3d(0,0,0);
 }
 .grid .figcaption {
 	text-align: left;
@@ -600,14 +600,14 @@ h2.resp-accordion {
 }
 
 :-moz-placeholder { /* Firefox 18- */
-	color:#fff !important; 
+	color:#fff !important;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
 	color:#fff !important;
 }
 
-:-ms-input-placeholder {  
+:-ms-input-placeholder {
 	color:#fff !important;
 }
 /*--//contact--*/
