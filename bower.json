@@ -2,9 +2,9 @@
   "name": "angular",
   "version": "1.0.0",
   "dependencies": {
-    "angular": "latest",
-    "angular-route": "latest",
-    "bootstrap": "latest",
+    "angular": "~1.5.8",
+    "angular-route": "~1.5.8",
+    "bootstrap": "~3.3.7",
     "font-awesome": "~4.6.3"
   }
 }

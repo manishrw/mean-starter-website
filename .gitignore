@@ -1,3 +1,4 @@
 build/
 access.log
 node_modules*
+public/libs/*
