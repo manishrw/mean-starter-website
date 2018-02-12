@@ -1,1 +1,8 @@
-angular.module('sampleApp', ['ngRoute', 'appRoutes', 'MainCtrl', 'ProfileCtrl', 'ProfileService']);
+angular.module('sampleApp', [
+	'ngRoute',
+	'appRoutes',
+	'MainCtrl',
+	'ProfileCtrl',
+	'TravelCtrl',
+	'ProfileService'
+]);
