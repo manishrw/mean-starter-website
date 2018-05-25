@@ -1,13 +1,16 @@
+requireDir = require('require-dir');
+
 module.exports = function(app) {
 
 	// server routes ===========================================================
-	// handle things like api calls
+	// API calls
+	// app.server.get()
 	// authentication routes
 
 	// frontend routes =========================================================
 	// route to handle all angular requests
-	app.get('*', function(req, res) {
-		res.sendfile('./public/index.html');
+	app.server.get('*', function(req, res) {
+		res.sendfile(app.publicDir + '/index.html');
 	});
 
 };
