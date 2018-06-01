@@ -9,5 +9,8 @@
     "jquery": "^3.3.1",
     "angular-animate": "^1.6.9",
     "angular-touch": "^1.6.9"
+  },
+  "resolutions": {
+    "angular": "1.7.0"
   }
 }
