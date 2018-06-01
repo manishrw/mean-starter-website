@@ -1,16 +1,21 @@
-requireDir = require('require-dir');
+/*
+ * server/routes.js
+ */
+'use strict';
 
-module.exports = function(app) {
+const path = require('path');
 
-	// server routes ===========================================================
-	// API calls
-	// app.server.get()
-	// authentication routes
+module.exports = function(app, restify) {
+
+	var s = app.server;
+	var r = app.router;
 
 	// frontend routes =========================================================
-	// route to handle all angular requests
-	app.server.get('*', function(req, res) {
-		res.sendfile(app.publicDir + '/index.html');
-	});
+	s.get('/', (req, res) => res.sendfile(path.join(app.publicDir, '/index.html')));
+	s.get('/profile', (req, res) => res.sendfile(path.join(app.publicDir, '/index.html')));
+	s.get('/travel', (req, res) => res.sendfile(path.join(app.publicDir, '/index.html')));
+
+	// Restify API
+	restify.serve(r, app.m.User);	
 
 };

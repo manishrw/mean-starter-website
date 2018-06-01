@@ -4,14 +4,16 @@
   "dependencies": {
     "body-parser": "~1.4.2",
     "express": "~4.5.1",
+    "express-restify-mongoose": "^4.3.0",
     "fs": "0.0.2",
     "method-override": "~2.0.2",
-    "mongoose": "~4.4",
+    "mongoose": "^4.4.20",
+    "mongoose-timestamp": "^0.6.0",
     "morgan": "^1.7.0",
     "path": "^0.12.7",
     "require-dir": "^1.0.0"
   },
   "scripts": {
-    "start": "node server/index"
+    "start": "node server"
   }
 }
