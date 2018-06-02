@@ -7,7 +7,7 @@ angular.module('MainCtrl', []).controller('MainController', function($scope) {
 		github: 'https://github.com/manishrw/'
 	};
 	$scope.phone = '+91 88847 15911';
-	$scope.address = {street: 'Koramangala, Bangalore - 560047', state: 'KA, India.'};
+	$scope.address = {street: 'Gachibowli, Hyderabad - 500032', state: 'TS, India.'};
 	$scope.mail = 'manishrw@yahoo.com';
 
 });

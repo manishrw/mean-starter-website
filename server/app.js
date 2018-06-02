@@ -6,7 +6,6 @@
 // Load modules
 var express 			 = require('express');
 var mongoose       = require('mongoose');
-var restify 			 = require('express-restify-mongoose');
 var bodyParser     = require('body-parser');
 var methodOverride = require('method-override');
 var morgan				 = require('morgan');
@@ -32,18 +31,17 @@ app.c = app.controllers = requireDir(app.dir + '/controllers', {recurse: true});
 // Configure middleware
 app.server.set('views', path.join(app.publicDir, '/views'));
 app.server.set('view engine', 'pug');
-// app.server.use(favicon(path.join(app.publicDir, '/favicon.ico')));
-app.server.use(morgan('dev'));
 app.server.use(methodOverride());
+app.server.use(bodyParser.json());
+app.server.use(bodyParser.urlencoded({ extended: true }));
+app.server.use('/', express.static(app.publicDir));
+// app.server.use(bodyParser.json({ type: 'application/vnd.api+json' })); // parse application/vnd.api+json as json
+// app.server.use(multer());
+// app.server.use(methodOverride('X-HTTP-Method-Override')); // override with the X-HTTP-Method-Override header in the request. simulate DELETE/PUT
+// app.server.use(favicon(path.join(app.publicDir, '/favicon.ico')));
 // app.server.use(session({ resave: true,
 //                   saveUninitialized: true,
 //                   secret: 'uwotm8' }));
-app.server.use(bodyParser.json());
-app.server.use(bodyParser.urlencoded({ extended: true }));
-// app.server.use(bodyParser.json({ type: 'application/vnd.api+json' })); // parse application/vnd.api+json as json
-// app.server.use(multer());
-app.server.use('/', express.static(app.publicDir));
-// app.server.use(methodOverride('X-HTTP-Method-Override')); // override with the X-HTTP-Method-Override header in the request. simulate DELETE/PUT
 
 // Configure debug
 if (!fs.existsSync('./logs')) {
@@ -55,7 +53,7 @@ app.server.use(morgan('dev'));
 
 // Configure routes
 app.router = express.Router();
-require('./routes')(app, restify);
+require('./routes')(app);
 
 // App entrypoint
 app.run = function() {

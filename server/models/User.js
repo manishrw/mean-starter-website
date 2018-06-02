@@ -1,7 +1,12 @@
+/*
+ * server/models/User.js
+ */
+'use strict';
+
 const mongoose = require('mongoose');
 const timestamps = require('mongoose-timestamp');
 
-// define our model
+// Schema
 const UserSchema = new mongoose.Schema({
 	name: {
 		type: String,
@@ -15,6 +20,8 @@ const UserSchema = new mongoose.Schema({
 	}
 }, { collection: 'users' });
 
+// Plugins
 UserSchema.plugin(timestamps);
 
+// Model
 module.exports = exports = mongoose.model('User', UserSchema);
