@@ -11,7 +11,9 @@
     "morgan": "^1.7.0",
     "path": "^0.12.7",
     "require-dir": "^1.0.0",
-    "restify-mongoose": "^3.0.0"
+    "restify-mongoose": "^3.0.0",
+    "rotating-file-stream": "^1.4.3",
+    "winston": "^3.2.1"
   },
   "scripts": {
     "start": "node server"
