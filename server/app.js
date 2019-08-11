@@ -34,9 +34,9 @@ app.server.use(bodyParser.urlencoded({ extended: true }));
 app.server.use('/', express.static(app.publicDir));
 
 // Configure HTTP logging
-var logDirectory = path.join(__dirname, 'logs');
+const logDirectory = path.join(__dirname, 'logs');
 fs.existsSync(logDirectory) || fs.mkdirSync(logDirectory);
-var accessLogStream = rfs('access.log', {
+const accessLogStream = rfs('access.log', {
 	interval: '1d',
 	path: logDirectory
 });
