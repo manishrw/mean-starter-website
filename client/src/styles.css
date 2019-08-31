@@ -4,8 +4,8 @@
 
 body {
   margin: 0;
-  font-family: 'Roboto Condensed', sans-serif;
-  background: #f5f5f1;
+  font-family: "Comic Sans MS", sans-serif;
+  background: whitesmoke;
 }
 
 body a {
@@ -19,6 +19,6 @@ body a {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
-  font-family: 'Overlock', cursive;
+  font-family: "Comic Sans MS", sans-serif;
 }
 

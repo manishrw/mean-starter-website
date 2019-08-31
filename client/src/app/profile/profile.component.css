@@ -15,7 +15,7 @@
 
 .header-left img {
   width: 100%;
-  border: 5px solid #3c3c3c;
+  /*border: 5px solid #3c3c3c;*/
 }
 
 .header-right {
@@ -54,7 +54,7 @@
   vertical-align: top;
   color: white;
   font-size: 1.4em;
-  padding: 10px;
+  padding-right: 10px;
 }
 
 .introContainer a:hover {
@@ -62,9 +62,9 @@
 }
 
 ul.address {
-  margin-top: 2em;
-  border-top: 1px solid #AFAFAF;
-  padding-top: 0.5em;
+  /*margin-top: 2em;*/
+  border-top: 1px solid whitesmoke;
+  /*padding-top: 0.5em;*/
 }
 
 ul.address li {
@@ -92,5 +92,5 @@ ul.address li ul.address-text li a:hover {
   color: #0FF;
 }
 
-/* END: CSS for Intro banner*/
+/* //CSS for Intro banner*/
 
