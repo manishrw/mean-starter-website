@@ -1,0 +1,64 @@
+<!--banner-->
+<!--TODO: remove unwanted personal details-->
+<div class="banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 header-left">
+        <img src="assets/img/passport.png" alt="My image"/>
+      </div>
+      <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 header-right">
+        <h2>Hello</h2>
+        <h1>I'm {{userData.name}}</h1>
+        <span class="introContainer">
+          <h6>{{userData.title}} | </h6>
+          <a href="{{social.linkedin}}">
+            <fa-icon [icon]="['fab', 'linkedin']"></fa-icon>
+          </a>
+          <a href="{{social.twitter}}">
+            <fa-icon [icon]="['fab', 'twitter']"></fa-icon>
+          </a>
+          <a href="{{social.skype}}">
+            <fa-icon [icon]="['fab', 'skype']"></fa-icon>
+          </a>
+          <a href="{{social.github}}">
+            <fa-icon [icon]="['fab', 'github']"></fa-icon>
+          </a>
+          <a href="{{social.linkedin}}"><i class="fab fa-font-awesome"></i></a>
+        </span>
+        <ul class="address">
+          <li>
+            <ul class="address-text">
+              <li><b>D.O.B</b></li>
+              <li>{{userData.dob}}</li>
+            </ul>
+          </li>
+          <li>
+            <ul class="address-text">
+              <li><b>PHONE </b></li>
+              <li>{{userData.phone}}</li>
+            </ul>
+          </li>
+          <li>
+            <ul class="address-text">
+              <li><b>ADDRESS </b></li>
+              <li>{{userData.address.street}}, {{userData.address.state}}</li>
+            </ul>
+          </li>
+          <li>
+            <ul class="address-text">
+              <li><b>E-MAIL </b></li>
+              <li><a href="mailto:{{userData.mail}}">{{userData.mail}}</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul class="address-text">
+              <li><b>BLOG </b></li>
+              <li><a href="{{userData.blog.url}}">{{userData.blog.title}}</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!--//banner-->

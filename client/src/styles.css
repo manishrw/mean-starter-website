@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import url("~bootstrap/dist/css/bootstrap.min.css");
+@import url("~@fortawesome/fontawesome-free/css/brands.min.css"); /*TODO: Check if required*/
 
 body {
   margin: 0;

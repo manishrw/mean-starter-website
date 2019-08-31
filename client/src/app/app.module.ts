@@ -6,10 +6,12 @@ import {faGithub, faLinkedin, faSkype, faTwitter} from '@fortawesome/free-brands
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {CoreModule} from './core/core.module';
+import {ProfileComponent} from './profile/profile.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
