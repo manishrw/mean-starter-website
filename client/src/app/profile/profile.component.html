@@ -9,7 +9,7 @@
       <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 header-right">
         <h2>Hello</h2>
         <h1>I'm {{userData.name}}</h1>
-        <span class="introContainer">
+        <span class="introduction">
           <h6>{{userData.title}} | </h6>
           <a href="{{social.linkedin}}">
             <fa-icon [icon]="['fab', 'linkedin']"></fa-icon>
@@ -23,42 +23,111 @@
           <a href="{{social.github}}">
             <fa-icon [icon]="['fab', 'github']"></fa-icon>
           </a>
-          <a href="{{social.linkedin}}"><i class="fab fa-font-awesome"></i></a>
         </span>
-        <ul class="address">
-          <li>
-            <ul class="address-text">
-              <li><b>D.O.B</b></li>
-              <li>{{userData.dob}}</li>
-            </ul>
-          </li>
-          <li>
-            <ul class="address-text">
-              <li><b>PHONE </b></li>
-              <li>{{userData.phone}}</li>
-            </ul>
-          </li>
-          <li>
-            <ul class="address-text">
-              <li><b>ADDRESS </b></li>
-              <li>{{userData.address.street}}, {{userData.address.state}}</li>
-            </ul>
-          </li>
-          <li>
-            <ul class="address-text">
-              <li><b>E-MAIL </b></li>
-              <li><a href="mailto:{{userData.mail}}">{{userData.mail}}</a></li>
-            </ul>
-          </li>
-          <li>
-            <ul class="address-text">
-              <li><b>BLOG </b></li>
-              <li><a href="{{userData.blog.url}}">{{userData.blog.title}}</a></li>
-            </ul>
-          </li>
-        </ul>
       </div>
     </div>
   </div>
 </div>
 <!--//banner-->
+
+<!--nav profile-->
+<div class="nav-profile">
+  <nav class="navbar navbar-expand navbar-dark">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#work">Work<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#education">Education<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects<span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<!--//nav profile-->
+
+<!--about-->
+<div id="about" class="about">
+  <div class="container">
+    <h3 class="title"> About Me</h3>
+    <div class="row">
+      <div class="col-md-7 about-left">
+        <div class="aboutus" [innerHTML]="aboutUs"></div>
+      </div>
+      <div class="col-md-5 about-right">
+        <h5>Awards</h5>
+        <ul>
+          <li *ngFor="let award of awards"><span class="glyphicon glyphicon-menu-right"></span> {{award}}</li>
+        </ul>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</div>
+<!--//about-->
+<!--work-experience-->
+<div id="work" class="work">
+  <div class="container">
+    <h3 class="title">Work Experience</h3>
+    <div class="work-info" *ngFor="let work of workInfo; let index = index">
+      <div [ngClass]="index % 2 === 1 ? 'col-md-6 work-left' : 'col-md-6 work-right work-right2'">
+        <h4>{{work.year}}</h4>
+      </div>
+      <div [ngClass]="index % 2 === 1 ? 'col-md-6 work-right' : 'col-md-6 work-left work-left2'">
+        <h5 *ngIf="index % 2 === 0">{{work.company}}<span class="glyphicon glyphicon-briefcase"> </span></h5>
+        <h5 *ngIf="index % 2 === 1"><span class="glyphicon glyphicon-briefcase"> </span>{{work.company}}</h5>
+        <h3>{{work.role}}</h3>
+        <div ng-bind-html="work.description"></div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</div>
+<!--//work-experience-->
+<!--education-->
+<div id="education" class="education">
+  <div class="container">
+    <h3 class="title">Education</h3>
+    <div class="work-info" *ngFor="let edx of education; let index = index">
+      <div [ngClass]="index % 2 === 1 ? 'col-md-6 work-left' : 'col-md-6 work-right work-right2'">
+        <h4>{{edx.title}}</h4>
+      </div>
+      <div [ngClass]="index % 2 === 1 ? 'col-md-6 work-right' : 'col-md-6 work-left work-left2'">
+        <h5 *ngIf="index % 2 === 1"><span class="glyphicon glyphicon-education"> </span>{{edx.univ}}</h5>
+        <h5 *ngIf="index % 2 === 0">{{edx.univ}}<span class="glyphicon glyphicon-education"> </span></h5>
+        <div ng-bind-html="edx.description"></div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</div>
+<!--//education-->
+<!--skills-->
+<div id="skills" class="skills">
+  <div class="container">
+    <h3 class="title">Skills</h3>
+    <div class="skills-info">
+      <div class="col-md-6 bar-grids" *ngFor="let s of skills">
+        <h6>{{s.title}}<span>{{s.value}}</span></h6>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped active" ng-style="{'width': s.value}">
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</div>
+<!--//skills-->
+
