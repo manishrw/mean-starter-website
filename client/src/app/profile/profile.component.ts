@@ -49,7 +49,7 @@ export class ProfileComponent implements OnInit {
     ];
     this.aboutUs = '<p>I am an enthusiastic software engineer and a philosopher. I like to build new technology and play around. Currently working in Microsoft R&D, Hyderabad as Software Engineer. </p><br><p>I\'ve been associated and involved with computers through out my life. Among other stuff, I like to play sports(primarily badminton and lawn tennis), read books, surf blogs and articles. I personally like to research on various topics especially those pertaining to science, technology and philosophy.</p>';
     this.workInfo = [{
-      year: 'July 2016 - Present ',
+      year: 'July 2016 - Nov 2018 ',
       company: ' Microsoft R&D India Pvt. Ltd. ',
       role: ' Software Engineer 2',
       description: ''
@@ -69,17 +69,26 @@ export class ProfileComponent implements OnInit {
       role: ' Executive Committee Member',
       description: '<p>Organized and Conducted various seminars, competitions, hackathons and training sessions. Collaborated with fellow ACM mates to participate in competitive programming and develop various applications.</p>'
     }];
+
     this.education = [{
-      title: 'Machine Learning Certification, 2016',
+      title: 'M.S. in  Computer Science',
+      univ: ' Georgia Tech, AL, US',
+      year: '2018 - 2020',
+      description: '<p>Specialisation in Machine learning.<br> Courses: Machine learning for Trading, Grad Intro to OS, Intro to High Performance computing, Reinforcement learning, Information Security.</p>'
+    }, {
+      title: 'Machine Learning Certification',
       univ: ' Stanford Online course - Coursera',
+      year: '2016',
       description: '<p>Completed training in machine learning course by Andrew NG from Stanford University and earned a certificate. The course provided a broad introduction to machine learning, datamining, and statistical pattern recognition.</p>'
     }, {
-      title: 'B.Tech in Computer Engineering, 2013',
-      univ: ' SVNIT, Surat ',
+      title: 'B.Tech in Computer Engineering',
+      univ: ' SVNIT, Surat, India ',
+      year: '2019 - 2013',
       description: '<p>Courses: Data Structures, Algorithm analysis and design, Theoretical Computer Science, Operating Systems, Systems software, Microprocessors & Interfacing Techniques, Information systems, Network & system security, Security in Embedded systems, Distributed systems, Engineering Mathmematics, and Artificial Intelligence.</p><p> Project on Evaluation of Privacy Homomorphic algoritms in Wireless Sensor Networks. Published a paper in IJCA for same. Seminar on Secure boot</p>'
     }, {
-      title: 'Java professional course, 2009',
+      title: 'Java professional course',
       univ: ' Aptech Edu. Ltd. ',
+      year: '2009',
       description: '<p>Completed the course of JAVA Core developer from Aptech in 2009. The course provided an understanding of core OOPS principle, advanced data structures and principles of software design.</p>'
     }];
 
