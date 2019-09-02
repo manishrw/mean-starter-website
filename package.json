@@ -5,7 +5,7 @@
     "body-parser": "~1.4.2",
     "express": "~4.5.1",
     "fs": "0.0.2",
-    "method-override": "~2.0.2",
+    "method-override": "~2.3.10",
     "mongoose": "^4.4.20",
     "mongoose-timestamp": "^0.6.0",
     "morgan": "^1.7.0",
