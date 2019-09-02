@@ -8,7 +8,7 @@
     "method-override": "~2.0.2",
     "mongoose": "^4.4.20",
     "mongoose-timestamp": "^0.6.0",
-    "morgan": "^1.7.0",
+    "morgan": "^1.9.1",
     "path": "^0.12.7",
     "require-dir": "^1.0.0",
     "restify-mongoose": "^3.0.0",
