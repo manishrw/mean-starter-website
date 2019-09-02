@@ -11,6 +11,8 @@ import {ProfileComponent} from './profile/profile.component';
 import {WorktimelineComponent} from './profile/worktimeline/worktimeline.component';
 import {EducationtimelineComponent} from './profile/educationtimeline/educationtimeline.component';
 import {SkillsComponent} from './profile/skills/skills.component';
+import {TravelComponent} from './travel/travel.component';
+import {BlogComponent} from './blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import {SkillsComponent} from './profile/skills/skills.component';
     ProfileComponent,
     WorktimelineComponent,
     EducationtimelineComponent,
-    SkillsComponent
+    SkillsComponent,
+    TravelComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,
