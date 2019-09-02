@@ -1,6 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
 @import url("~bootstrap/dist/css/bootstrap.min.css");
-@import url("~@fortawesome/fontawesome-free/css/brands.min.css"); /*TODO: Check if required*/
 
 body {
   margin: 0;
@@ -19,6 +18,14 @@ body a {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
-  font-family: "Comic Sans MS", sans-serif;
+}
+
+h3.title {
+  font-size: 4em;
+  text-align: center;
+  color: #008B8B;
+  border-bottom: 4px double gray;
+  padding-bottom: 0.2em;
+  margin-bottom: 1em;
 }
 
