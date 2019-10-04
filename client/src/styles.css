@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("~bootstrap/dist/css/bootstrap.min.css");
+
+body {
+  margin: 0;
+  font-family: "Comic Sans MS", sans-serif;
+  background: whitesmoke;
+}
+
+body a {
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+h3.title {
+  font-size: 4em;
+  text-align: center;
+  color: #008B8B;
+  border-bottom: 4px double gray;
+  padding-bottom: 0.2em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
