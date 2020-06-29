@@ -18,7 +18,7 @@ const app = {
 	config: config,
 	dir: __dirname,
 	server: express(),
-	publicDir: path.join(__dirname, './../public')
+	publicDir: path.join(__dirname, './../client/dist/client')
 };
 
 // Load app modules and controllers

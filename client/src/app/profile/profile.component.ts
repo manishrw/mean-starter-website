@@ -22,7 +22,8 @@ export class ProfileComponent implements OnInit {
       linkedin: 'https://www.linkedin.com/in/manishrw',
       twitter: 'https://twitter.com/manishrw',
       skype: 'skype:manishsvnit007',
-      github: 'https://github.com/manishrw/'
+      github: 'https://github.com/manishrw/',
+      email: 'mailto:manishsvnit007@gmail.com'
     };
     this.userData = {
       name: 'Manish Wadhwani',
@@ -32,7 +33,7 @@ export class ProfileComponent implements OnInit {
       dob: '06-12-1991',
       address: {
         street: 'Whitefield, Bangalore',
-        state: 'KA'
+        state: 'KA, India'
       },
       blog: {
         url: 'https://manishrw.blogspot.com',
@@ -74,7 +75,7 @@ export class ProfileComponent implements OnInit {
       title: 'M.S. in  Computer Science',
       univ: ' Georgia Tech, AL, US',
       year: '2018 - 2020',
-      description: '<p>Specialisation in Machine learning.<br> Courses: Machine learning for Trading, Grad Intro to OS, Intro to High Performance computing, Reinforcement learning, Information Security.</p>'
+      description: '<p>Specialisation in Computing Systems.<br> Courses: Grad Intro to OS, Intro to High Performance computing, Advanced OS, High Performance Computing Architecture, Graduate Algorithms, Reinforcement learning, Information Security, Machine learning for Trading, AI 4 Robotics, AI - ethics, bias and society.</p>'
     }, {
       title: 'Machine Learning Certification',
       univ: ' Stanford Online course - Coursera',

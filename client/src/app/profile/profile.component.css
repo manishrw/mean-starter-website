@@ -11,6 +11,11 @@
   padding-bottom: 1em;
 }
 
+.banner .passport {
+  border: none;
+  background-color: #008B8B;
+}
+
 .container {
   padding-top: 2em;
   padding-bottom: 2em;
@@ -30,7 +35,7 @@
 .header-right h1 {
   font-size: 2.5em;
   color: #fff;
-  margin: 0.5em 0 0;
+  margin: 0.5em 0 0.2em 0;
 }
 
 .header-right h2 {
@@ -59,11 +64,11 @@
   vertical-align: top;
   color: white;
   font-size: 1.4em;
-  padding-right: 10px;
+  padding-right: 20px;
 }
 
 .introduction a:hover {
-  color: #cccccc;
+  color: #008B8B;
 }
 
 /* //Intro banner */

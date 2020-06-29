@@ -2,7 +2,7 @@ import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {FaIconLibrary, FontAwesomeModule} from '@fortawesome/angular-fontawesome'
 import {faGithub, faLinkedin, faSkype, faTwitter} from '@fortawesome/free-brands-svg-icons';
-import {faBriefcase, faBusinessTime, faClock, faGraduationCap} from "@fortawesome/free-solid-svg-icons";
+import {faBriefcase, faBusinessTime, faClock, faGraduationCap, faEnvelope} from "@fortawesome/free-solid-svg-icons";
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
@@ -35,6 +35,6 @@ import {BlogComponent} from './blog/blog.component';
 })
 export class AppModule {
   constructor(private library: FaIconLibrary) {
-    library.addIcons(faLinkedin, faGithub, faTwitter, faSkype, faBriefcase, faBusinessTime, faClock, faGraduationCap);
+    library.addIcons(faLinkedin, faGithub, faTwitter, faSkype, faBriefcase, faBusinessTime, faClock, faGraduationCap, faEnvelope);
   }
 }

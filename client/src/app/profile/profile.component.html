@@ -4,26 +4,30 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 header-left">
-        <img src="assets/img/passport.png" class="img-thumbnail" alt="My image"/>
+        <img src="assets/img/passport.png" class="img-thumbnail passport" alt="My image"/>
       </div>
       <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 header-right">
         <h2>Hello</h2>
         <h1>I'm {{userData.name}}</h1>
         <span class="introduction">
-          <h6>{{userData.title}} | </h6>
+          <h6>{{userData.title}}&nbsp;&nbsp;&nbsp;|&nbsp;</h6>
           <a href="{{social.linkedin}}">
             <fa-icon [icon]="['fab', 'linkedin']"></fa-icon>
           </a>
           <a href="{{social.twitter}}">
             <fa-icon [icon]="['fab', 'twitter']"></fa-icon>
           </a>
-          <a href="{{social.skype}}">
-            <fa-icon [icon]="['fab', 'skype']"></fa-icon>
+          <a href="{{social.email}}">
+            <fa-icon [icon]="['fas', 'envelope']"></fa-icon>
           </a>
           <a href="{{social.github}}">
             <fa-icon [icon]="['fab', 'github']"></fa-icon>
           </a>
         </span>
+        <div style="margin-top: 2em;">
+          Location: {{userData.address.street}}, {{userData.address.state}} <br>
+          
+        </div>
       </div>
     </div>
   </div>
