@@ -18,7 +18,7 @@ const app = {
 	config: config,
 	dir: __dirname,
 	server: express(),
-	publicDir: path.join(__dirname, './../client/dist/client')
+	clientDir: path.join(__dirname, './../client/dist/client')
 };
 
 // Load app modules and controllers
@@ -30,7 +30,7 @@ app.server.set('view engine', 'pug');
 app.server.use(methodOverride());
 app.server.use(bodyParser.json());
 app.server.use(bodyParser.urlencoded({ extended: true }));
-app.server.use('/', express.static(app.publicDir));
+app.server.use('/', express.static(app.clientDir));
 
 // Configure HTTP logging
 const logDirectory = path.join(__dirname, 'logs');

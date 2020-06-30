@@ -38,7 +38,8 @@ export class ProfileComponent implements OnInit {
       blog: {
         url: 'https://manishrw.blogspot.com',
         title: 'Personal blog'
-      }
+      },
+      job: 'Senior Backend Engineer'
     };
     this.awards = [
       'Runner up in IBM Techathon, 2013',
@@ -100,7 +101,7 @@ export class ProfileComponent implements OnInit {
       title: 'Scripting - Node.JS/Python/Shell',
       value: '80%'
     }, {
-      title: 'HTML/CSS',
+      title: 'Distributed systems',
       value: '70%'
     }, {
       title: 'NoSQL - Mongo DB/ Redis ',

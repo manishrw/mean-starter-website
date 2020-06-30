@@ -111,16 +111,15 @@ ul.navbar-nav li a:hover, ul.navbar-nav li a.active, ul.navbar-nav li a:focus {
 
 .aboutus {
   font-size: 1em;
-  color: #999;
+  color: #343a40;
   line-height: 1.8em;
 }
 
-/*.about-right {*/
-/*  padding-left: 5em;*/
-/*}*/
 .about-right {
-  border: 3px double gray;
-  /*padding: 1em 2em;*/
+  /* border: 3px double gray; */
+  /* padding: 1em 2em; */
+  /* padding-left: 5em; */
+  color: #343a40;
 }
 
 .about-right h5 {
@@ -128,12 +127,12 @@ ul.navbar-nav li a:hover, ul.navbar-nav li a.active, ul.navbar-nav li a:focus {
   text-align: center;
   color: #008B8B;
   padding-bottom: 0.5em;
-  padding-top: 0.5em;
+  /* padding-top: 0.5em; */
 }
 
 .about-right ul li {
   /*display: block;*/
-  color: #999;
+  color: #343a40;
   /*margin: 1em 0;*/
   font-size: 1em;
 }

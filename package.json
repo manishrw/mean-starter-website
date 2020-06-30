@@ -17,7 +17,11 @@
     "winston-daily-rotate-file": "^3.10.0"
   },
   "scripts": {
-    "start": "node server",
-    "start-dev": "nodemon server"
+    "start": "npm run build; npm run server",
+    "server": "node server",
+    "server-dev": "nodemon server",
+    "build": "cd client; ng build --prod",
+    "client": "cd client; ng serve",
+    "client-dev": "cd client; ng serve --live-reload --watch"
   }
 }
