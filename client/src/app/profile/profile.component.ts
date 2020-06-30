@@ -49,12 +49,17 @@ export class ProfileComponent implements OnInit {
       'Winners of ACM Quest programming, MindBend, 2013 ',
       'IBM Deep Skill Award for Q4, 2014'
     ];
-    this.aboutUs = '<p>I am an enthusiastic software engineer and a philosopher. I like to build new technology and play around. Currently working in Microsoft R&D, Hyderabad as Software Engineer. </p><br><p>I\'ve been associated and involved with computers through out my life. Among other stuff, I like to play sports(primarily badminton and lawn tennis), read books, surf blogs and articles. I personally like to research on various topics especially those pertaining to science, technology and philosophy.</p>';
+    this.aboutUs = '<p>A senior software engineer with 7+ years of experience in Distributed Systems, Web Applications, Machine Learning, and proficient in  JAVA, Python, Node.JS, NoSQL. Manish graduated from Sardar Vallabhbahi National Institute of Technology, Surat in Computer Engineering. He is currently pursuing Master\'s in Computer science from Georgia Tech with specialization in Computing Systems.<br><br>He has been associated and involved with computers throughout his life. While he is not designing/coding, he likes to play badminton and to ride the bike. He also likes to watch TV series in his spare time.</p>';//<br>Specialties: <ul><li>Distributed systems</li><li>Algorithm design</li><li>Web application development</li><li>Machine Learning</li></ul></p>';
     this.workInfo = [{
+      year: 'Nov 2018 - Present',
+      company: 'EY Product Engineering',
+      role: 'Senior Software Engineer',
+      description: '<p><b>Access-mgt service:</b> Designed and developed centralized access-mgt service which supports all the features of XACML 3.0 and modeled upon ABAC.<br><b>Generic Notification service: </b> Designed and developed to be reliable, scalable and multi-tenant platform to send notifications to the clients.</p><br>Technologies used: Java, Spring Boot, Cassandra, SQL Server, Kubernetes, Docker, NodeJS'
+    }, {
       year: 'July 2016 - Nov 2018 ',
       company: ' Microsoft R&D India Pvt. Ltd. ',
       role: ' Software Engineer 2',
-      description: ''
+      description: '<p><b>Bing Answer Experience:</b> Designed and developed the pipeline to auto extract and rank Answers for queries using machine learning for a segment in Bing. It helped the coverage to gain by ~90% for automated answers.<br><b>Help Carousel:</b> ​ Designed and developed the system to generate and auto refresh the help topics in Carousel. The project also required clustering techniques to group similar answers into the same buckets.<br><b>Broken Links detection:</b> ​ Developed a system to catch broken links for the shipped experience. This helped to decrease the negative experience caused by stale links.</p><br>Technologies used: C#, Cosmos, Python, Azure ML'
     }, {
       year: 'April 2015 - June 2016 ',
       company: ' Medibox Technologies LLP ',
