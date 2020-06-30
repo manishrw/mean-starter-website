@@ -1,0 +1,13 @@
+.progress {
+  height: 10px;
+  margin-bottom: 2.2em;
+  margin-top: 1em;
+}
+
+.card {
+  background-color: whitesmoke;
+}
+
+.progress-bar {
+  background-color: #008B8B;
+}

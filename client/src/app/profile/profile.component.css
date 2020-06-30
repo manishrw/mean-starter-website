@@ -1,0 +1,283 @@
+/* Intro banner */
+/*TODO: remove unwanted css*/
+.banner {
+  background: url(../../assets/img/wallpaper.png) no-repeat center 0px;
+  -webkit-background-size: cover;
+  background-size: cover;
+  -moz-background-size: cover;
+  position: relative;
+  height: 100%;
+  padding-top: 3em;
+  padding-bottom: 1em;
+}
+
+.banner .passport {
+  border: none;
+  background-color: #008B8B;
+}
+
+.container {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  color: white;
+}
+
+.header-left img {
+  width: 100%;
+  border: 5px solid whitesmoke;
+  left: -10%;
+}
+
+.header-right {
+  padding-left: 3em;
+}
+
+.header-right h1 {
+  font-size: 2.5em;
+  color: #fff;
+  margin: 0.5em 0 0.2em 0;
+}
+
+.header-right h2 {
+  font-size: 1.2em;
+  color: #000;
+  background: #f5f5f1;
+  display: inline-block;
+  padding: .5em 1.5em;
+  position: relative;
+}
+
+.header-right h2:before {
+  width: 0;
+  height: 0;
+  position: absolute;
+  content: '';
+  bottom: -9px;
+  left: 12px;
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: #f5f5f1 transparent transparent transparent;
+}
+
+.introduction h6, .introduction a {
+  display: inline;
+  vertical-align: top;
+  color: white;
+  font-size: 1.4em;
+  padding-right: 20px;
+}
+
+.introduction a:hover {
+  color: #008B8B;
+}
+
+/* //Intro banner */
+
+/* nav profile*/
+.nav-profile {
+  /*background-color: whitesmoke;*/
+  background: #008B8B;
+}
+
+.nav > li {
+  display: inline-block;
+}
+
+ul.navbar-nav {
+  margin: 0;
+  text-align: center;
+}
+
+ul.navbar-nav li a {
+  color: #fff;
+  padding: 1em 2em;
+  font-size: 1.2em;
+}
+
+ul.navbar-nav li a:hover, ul.navbar-nav li a.active, ul.navbar-nav li a:focus {
+  color: #008B8B;
+  background: #fff;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  transform: scale(0.8);
+  -o-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+}
+
+/*--about--*/
+.about, .work, .education, .skills, .portfolio, .contact {
+  /*padding:6em 0;*/
+}
+
+.aboutus {
+  font-size: 1em;
+  color: #343a40;
+  line-height: 1.8em;
+}
+
+.about-right {
+  /* border: 3px double gray; */
+  /* padding: 1em 2em; */
+  /* padding-left: 5em; */
+  color: #343a40;
+}
+
+.about-right h5 {
+  font-size: 2em;
+  text-align: center;
+  color: #008B8B;
+  padding-bottom: 0.5em;
+  /* padding-top: 0.5em; */
+}
+
+.about-right ul li {
+  /*display: block;*/
+  color: #343a40;
+  /*margin: 1em 0;*/
+  font-size: 1em;
+}
+
+.about-right ul li span.glyphicon {
+  font-size: 0.8em;
+  /*margin-right: 6px;*/
+}
+
+/*--//about--*/
+
+/*--work--*/
+.work {
+  background: #343a40 !important;
+}
+
+.work-left {
+  text-align: right;
+  padding: 3em 5em 0 0;
+}
+
+.work-right {
+  border-left: 1px solid #999;
+  padding: 2.5em 0 2em 6em;
+}
+
+.work-info h4 {
+  font-size: 1.2em;
+  background: darkcyan;
+  display: inline-block;
+  padding: .6em 1.2em;
+  color: #fff;
+  position: relative;
+}
+
+.work-info h4:before {
+  width: 0;
+  height: 0;
+  position: absolute;
+  /*-- w3layouts --*/
+  content: '';
+  top: 9px;
+  right: -14px;
+  border-style: solid;
+  border-width: 10px 0 10px 16px;
+  border-color: transparent transparent transparent rgb(0, 139, 139);
+}
+
+.work-info h5 {
+  font-size: 1.3em;
+  color: #F7E612;
+  margin-bottom: .5em;
+  border: 1px solid #F7E612;
+  display: inline-block;
+  padding: 0 1.2em;
+}
+
+.work-info h5 span.glyphicon {
+  font-size: 0.9em;
+  color: #fff;
+  background: #008B8B;
+  padding: 1em;
+  -webkit-border-radius: 70%;
+  -moz-border-radius: 70%;
+  border-radius: 70%;
+  -webkit-transition: .5s all;
+  -moz-transition: .5s all;
+  transition: .5s all;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+}
+
+.work-right h5 span.glyphicon {
+  margin-right: 5em;
+  margin-left: -8em;
+}
+
+.work-left2 h5 span.glyphicon {
+  margin-left: 4em;
+  margin-right: -7.3em;
+  z-index: 9;
+}
+
+.work-right.work-right2 {
+  min-height: 210px;
+  float: right;
+}
+
+.work-right.work-right2 h4:before {
+  left: -14px;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  /*-- agileits --*/
+  transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+}
+
+.work-right.work-right2 h4 {
+  margin-top: 0.8em;
+}
+
+.work-info:hover h5 span.glyphicon {
+  color: #F7E612;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+}
+
+/*--//work--*/
+
+/*!*--education--*!*/
+/*.education .work-info h5 {*/
+/*  color: #008B8B;*/
+/*  border-color: #008B8B;*/
+/*}*/
+/*!*--//education--*!*/
+/*!*--skills--*!*/
+/*.skills{*/
+/*  background:#000;*/
+/*}*/
+/*.bar-grids {*/
+/*  padding: 0 4em;*/
+/*}*/
+/*.progress {*/
+/*  height: 10px;*/
+/*  margin-bottom: 2.2em;*/
+/*  background-color: #2F2C06;*/
+/*}*/
+/*.progress-bar {*/
+/*  background-color: #766E04;*/
+/*}*/
+/*.bar-grids h6 {*/
+/*  font-size: 1.1em;*/
+/*  color: #fff;*/
+/*  margin-bottom: 0.6em;*/
+/*}*/
+/*.bar-grids h6 span {*/
+/*  float: right;*/
+/*  font-size: 0.9em;*/
+/*}*/
+/*!*--//skills--*!*/
+

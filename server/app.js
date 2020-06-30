@@ -18,7 +18,7 @@ const app = {
 	config: config,
 	dir: __dirname,
 	server: express(),
-	publicDir: path.join(__dirname, './../public')
+	clientDir: path.join(__dirname, './../client/dist/client')
 };
 
 // Load app modules and controllers
@@ -26,12 +26,11 @@ app.m = app.models = requireDir(app.dir + '/models', {recurse: true});
 app.c = app.controllers = requireDir(app.dir + '/controllers', {recurse: true});
 
 // Configure middleware
-app.server.set('views', path.join(app.publicDir, '/views'));
 app.server.set('view engine', 'pug');
 app.server.use(methodOverride());
 app.server.use(bodyParser.json());
 app.server.use(bodyParser.urlencoded({ extended: true }));
-app.server.use('/', express.static(app.publicDir));
+app.server.use('/', express.static(app.clientDir));
 
 // Configure HTTP logging
 const logDirectory = path.join(__dirname, 'logs');
@@ -50,7 +49,8 @@ require('./routes')(app);
 // App entrypoint
 app.run = function() {
 	// Connect to DB
-	mongoose.connect(config.db.url) 
+	mongoose.set('useCreateIndex', true);
+	mongoose.connect(config.db.url, { useNewUrlParser: true, useUnifiedTopology: true }) 
 	.then(() =>  logger.info('DB connection succesful'))
   	.catch((err) => logger.error(err));
 	
