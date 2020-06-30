@@ -18,12 +18,16 @@ const app = {
 	config: config,
 	dir: __dirname,
 	server: express(),
-	clientDir: path.join(__dirname, './../client/dist/client')
+	clientDir: path.join(__dirname, './../client/dist/client'),
+	logger: logger
 };
 
 // Load app modules and controllers
 app.m = app.models = requireDir(app.dir + '/models', {recurse: true});
 app.c = app.controllers = requireDir(app.dir + '/controllers', {recurse: true});
+
+// Load auth filters and interceptors
+const auth = require('./auth')(app);
 
 // Configure middleware
 app.server.set('view engine', 'pug');
@@ -31,6 +35,7 @@ app.server.use(methodOverride());
 app.server.use(bodyParser.json());
 app.server.use(bodyParser.urlencoded({ extended: true }));
 app.server.use('/', express.static(app.clientDir));
+app.server.use(auth.basicAuth);
 
 // Configure HTTP logging
 const logDirectory = path.join(__dirname, 'logs');

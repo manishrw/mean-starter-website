@@ -1,5 +1,7 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+
 import {FaIconLibrary, FontAwesomeModule} from '@fortawesome/angular-fontawesome'
 import {faGithub, faLinkedin, faSkype, faTwitter} from '@fortawesome/free-brands-svg-icons';
 import {faBriefcase, faBusinessTime, faClock, faGraduationCap, faEnvelope} from "@fortawesome/free-solid-svg-icons";
@@ -26,6 +28,7 @@ import {BlogComponent} from './blog/blog.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     CoreModule,
     FontAwesomeModule

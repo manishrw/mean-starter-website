@@ -4,6 +4,7 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
+    "express-restify-mongoose": "^6.0.0",
     "fs": "0.0.2",
     "method-override": "^3.0.0",
     "mongoose": "^5.9.20",
@@ -11,7 +12,6 @@
     "morgan": "^1.10.0",
     "path": "^0.12.7",
     "require-dir": "^1.0.0",
-    "restify-mongoose": "^5.0.0",
     "rotating-file-stream": "^1.4.3",
     "winston": "^3.2.1",
     "winston-daily-rotate-file": "^3.10.0"
@@ -20,7 +20,7 @@
     "start": "npm run build; npm run server",
     "server": "node server",
     "server-dev": "nodemon server",
-    "build": "cd client; ng build --prod",
+    "build": "cd client; npm install; npm run build",
     "client": "cd client; ng serve",
     "client-dev": "cd client; ng serve --live-reload --watch"
   }

@@ -84,7 +84,7 @@ export class ProfileComponent implements OnInit {
       description: '<p>Completed training in machine learning course by Andrew NG from Stanford University and earned a certificate. The course provided a broad introduction to machine learning, datamining, and statistical pattern recognition.</p>'
     }, {
       title: 'B.Tech in Computer Engineering',
-      univ: ' SVNIT, Surat, India ',
+      univ: ' SVNIT, Surat, GJ, India ',
       year: '2019 - 2013',
       description: '<p>Courses: Data Structures, Algorithm analysis and design, Theoretical Computer Science, Operating Systems, Systems software, Microprocessors & Interfacing Techniques, Information systems, Network & system security, Security in Embedded systems, Distributed systems, Engineering Mathmematics, and Artificial Intelligence.</p><p> Project on Evaluation of Privacy Homomorphic algoritms in Wireless Sensor Networks. Published a paper in IJCA for same. Seminar on Secure boot</p>'
     }, {
