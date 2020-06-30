@@ -6,7 +6,7 @@
     "express": "~4.5.1",
     "fs": "0.0.2",
     "method-override": "~2.0.2",
-    "mongoose": "^4.4.20",
+    "mongoose": "^5.7.5",
     "mongoose-timestamp": "^0.6.0",
     "morgan": "^1.7.0",
     "path": "^0.12.7",
