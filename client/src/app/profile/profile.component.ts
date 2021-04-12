@@ -1,4 +1,15 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, Pipe, PipeTransform} from '@angular/core';
+import {DomSanitizer} from '@angular/platform-browser'
+
+@Pipe({name: 'safeHtml'})
+export class SafeHtmlPipe implements PipeTransform {
+  constructor(private sanitized: DomSanitizer) {
+  }
+
+  transform(value) {
+    return this.sanitized.bypassSecurityTrustHtml(value);
+  }
+}
 
 @Component({
   selector: 'app-profile',
@@ -28,18 +39,12 @@ export class ProfileComponent implements OnInit {
     this.userData = {
       name: 'Manish Wadhwani',
       title: 'Software Engineer',
-      mail: 'manishrw@yahoo.com',
-      phone: '+91 8884715911',
-      dob: '06-12-1991',
       address: {
-        street: 'Whitefield, Bangalore',
+        street: 'Bangalore',
         state: 'KA, India'
       },
-      blog: {
-        url: 'https://manishrw.blogspot.com',
-        title: 'Personal blog'
-      },
-      job: 'Senior Backend Engineer'
+      description: "I'm an India-based software developer who specializes in large-scale distributed systems for the web.\n" +
+        "I'm a senior backend developer at <a style='color: darkturquoise;' href=\"https://www.ey.com\">EY (Ernst & Young)</a> - Product engineering group."
     };
     this.awards = [
       'Runner up in IBM Techathon, 2013',
@@ -49,7 +54,8 @@ export class ProfileComponent implements OnInit {
       'Winners of ACM Quest programming, MindBend, 2013 ',
       'IBM Deep Skill Award for Q4, 2014'
     ];
-    this.aboutUs = '<p>A senior software engineer with 7+ years of experience in Distributed Systems, Web Applications, Machine Learning, and proficient in  JAVA, Python, Node.JS, NoSQL. Manish graduated from Sardar Vallabhbahi National Institute of Technology, Surat in Computer Engineering. He is currently pursuing Master\'s in Computer science from Georgia Tech with specialization in Computing Systems.<br><br>He has been associated and involved with computers throughout his life. While he is not designing/coding, he likes to play badminton and to ride the bike. He also likes to watch TV series in his spare time.</p>';//<br>Specialties: <ul><li>Distributed systems</li><li>Algorithm design</li><li>Web application development</li><li>Machine Learning</li></ul></p>';
+    this.aboutUs = '<p>A senior software engineer with 8+ years of experience in Distributed Systems, Web Applications, Machine Learning. Although, he\'s a programming polyglot, he tends to favour  Java, Python, Node.JS, and proficient in Databases and Cloud technologies. Manish graduated with Master\'s in Computer Science from Georgia Tech with specialization in Computing Systems. He completed his B.Tech from Sardar Vallabhbahi National Institute of Technology, Surat in Computer Engineering. <br><br>He has been associated and involved with computers throughout his life. While he is not coding, he likes to play badminton, trek mountains, and ride bike. He also likes to binge TV series in his spare time.</p>';
+    //<br>Specialties: <ul><li>Distributed systems</li><li>Algorithm design</li><li>Web application development</li><li>Machine Learning</li></ul></p>';
     this.workInfo = [{
       year: 'Nov 2018 - Present',
       company: 'EY Product Engineering',
@@ -68,7 +74,7 @@ export class ProfileComponent implements OnInit {
     }, {
       year: 'June 2013 - April 2015 ',
       company: ' IBM India Pvt. Ltd.',
-      role: ' Application Developer',
+      role: ' Software Developer',
       description: '<p>Developed and maintained business reports for a shipping giant. The reports helped customer gain better insights for demurrage & detention charges, vessel tracking, job booking and vessel filling optimisation. Developed a tool which automates account reset and creation process for client users with PYTHON and UNIX.</p><p>Technologies used: Python, Unix shell scripting, SQL, COGNOS, Qlikview.'
     }, {
       year: 'July 2011 - May 2012 ',
@@ -118,7 +124,7 @@ export class ProfileComponent implements OnInit {
       title: 'Machine Learning ',
       value: '50%'
     }, {
-      title: 'Web App development ',
+      title: 'System design ',
       value: '80%'
     }, {
       title: 'DB SQl - MySQL, Oracle PL/SQL',
