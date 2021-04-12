@@ -3,7 +3,7 @@ import {NgModule} from '@angular/core';
 import {HttpClientModule} from '@angular/common/http';
 
 import {FaIconLibrary, FontAwesomeModule} from '@fortawesome/angular-fontawesome'
-import {faGithub, faLinkedin, faSkype, faTwitter} from '@fortawesome/free-brands-svg-icons';
+import {faGithub, faInstagram, faLinkedin, faSkype, faStrava, faTwitter} from '@fortawesome/free-brands-svg-icons';
 import {faBriefcase, faBusinessTime, faClock, faEnvelope, faGraduationCap} from "@fortawesome/free-solid-svg-icons";
 
 import {AppRoutingModule} from './app-routing.module';
@@ -15,6 +15,7 @@ import {EducationtimelineComponent} from './profile/educationtimeline/educationt
 import {SkillsComponent} from './profile/skills/skills.component';
 import {TravelComponent} from './travel/travel.component';
 import {BlogComponent} from './blog/blog.component';
+import {RecognitionComponent} from './profile/recognition/recognition.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import {BlogComponent} from './blog/blog.component';
     SkillsComponent,
     TravelComponent,
     BlogComponent,
-    SafeHtmlPipe
+    SafeHtmlPipe,
+    RecognitionComponent
   ],
   imports: [
     BrowserModule,
@@ -39,6 +41,6 @@ import {BlogComponent} from './blog/blog.component';
 })
 export class AppModule {
   constructor(private library: FaIconLibrary) {
-    library.addIcons(faLinkedin, faGithub, faTwitter, faSkype, faBriefcase, faBusinessTime, faClock, faGraduationCap, faEnvelope);
+    library.addIcons(faLinkedin, faGithub, faTwitter, faInstagram, faStrava, faSkype, faBriefcase, faBusinessTime, faClock, faGraduationCap, faEnvelope);
   }
 }

@@ -22,6 +22,6 @@
     "server-dev": "nodemon server",
     "build": "cd client; npm install; npm run build",
     "client": "cd client; ng serve",
-    "client-dev": "cd client; ng serve --live-reload --watch"
+    "client-dev": "cd client; ng serve --host 0.0.0.0 --live-reload --watch"
   }
 }

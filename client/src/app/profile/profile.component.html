@@ -1,10 +1,9 @@
 <!--banner-->
-<!--TODO: remove unwanted personal details-->
 <div class="banner">
   <div class="container">
     <div class="row">
-      <div class="col-xs-2 col-sm-2 col-md-4 col-lg-4 header-left">
-        <img src="assets/img/passport.png" class="img-thumbnail passport" alt="My image"/>
+      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 header-left">
+        <img src="../../assets/img/passport.png" class="img-thumbnail passport" alt="My image"/>
       </div>
       <div class="col-xs-8 col-sm-8 col-md-6 col-lg-6 header-right">
         <h2>Hello, I'm</h2>
@@ -22,6 +21,12 @@
           </a>
           <a href="{{social.github}}">
             <fa-icon [icon]="['fab', 'github']"></fa-icon>
+          </a>
+          <a href="{{social.instagram}}">
+            <fa-icon [icon]="['fab', 'instagram']"></fa-icon>
+          </a>
+          <a href="{{social.strava}}">
+            <fa-icon [icon]="['fab', 'strava']"></fa-icon>
           </a>
         </span>
         <div style="margin-top: 2em;">
@@ -52,6 +57,9 @@
           <a class="nav-link" href="#skills">Skills<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="#recognition">Recognition<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="#projects">Projects<span class="sr-only">(current)</span></a>
         </li>
       </ul>
@@ -67,15 +75,8 @@
     <div class="row">
       <div class="col-md-1"></div>
       <div class="col-md-10 about-left">
-        <div class="aboutus" [innerHTML]="aboutUs"></div>
+        <div class="aboutus" [innerHTML]="aboutUs | safeHtml"></div>
       </div>
-      <!--      <div class="col-md-5 about-right">-->
-      <!--        <h5>Awards</h5>-->
-      <!--        <ul>-->
-      <!--          <li *ngFor="let award of awards"><span class="glyphicon glyphicon-menu-right"></span> {{award}}</li>-->
-      <!--        </ul>-->
-      <!--        <div class="clearfix"></div>-->
-      <!--      </div>-->
     </div>
     <div class="clearfix"></div>
   </div>
@@ -85,13 +86,18 @@
 <app-worktimeline [workInfo]="workInfo" id="work"></app-worktimeline>
 <app-educationtimeline [education]="education" id="education"></app-educationtimeline>
 <app-skills [skills]="skills" id="skills"></app-skills>
+<app-recognition [awards]="awards" id="recognition"></app-recognition>
 
-<h3 class="title" id="projects">Projects</h3>
-<div class="d-flex justify-content-center">
-  <div id="github-card"
-       data-sort-by="stars"
-       data-header-text="Most starred repositories"
-       data-max-repos="3"
-       data-username="manishrw">
+<!--projects-->
+<div class="container">
+  <h3 class="title" id="projects">Projects</h3>
+  <div class="row d-flex justify-content-center">
+    <div id="github-card"
+         data-sort-by="stars"
+         data-header-text="Most starred repositories"
+         data-max-repos="3"
+         data-username="manishrw">
+    </div>
   </div>
 </div>
+<!--//projects-->

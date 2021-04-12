@@ -7,14 +7,19 @@
   -moz-background-size: cover;
   position: relative;
   height: 100%;
-  padding-top: 3em;
-  padding-bottom: 1em;
+  padding-top: 10em;
+  padding-bottom: 2em;
 }
 
 .banner .passport {
   border: none;
-  background-color: transparent;
+  background-color: rgba(245, 245, 245, 0.5);
 }
+
+/*.banner .passport:hover {*/
+/*  border: none;*/
+/*  background-color: whitesmoke;*/
+/*}*/
 
 .container {
   padding-top: 2em;
@@ -113,33 +118,6 @@ ul.navbar-nav li a:hover, ul.navbar-nav li a.active, ul.navbar-nav li a:focus {
   font-size: 1em;
   color: #343a40;
   line-height: 1.8em;
-}
-
-.about-right {
-  /* border: 3px double gray; */
-  /* padding: 1em 2em; */
-  /* padding-left: 5em; */
-  color: #343a40;
-}
-
-.about-right h5 {
-  font-size: 2em;
-  text-align: center;
-  color: #008B8B;
-  padding-bottom: 0.5em;
-  /* padding-top: 0.5em; */
-}
-
-.about-right ul li {
-  /*display: block;*/
-  color: #343a40;
-  /*margin: 1em 0;*/
-  font-size: 1em;
-}
-
-.about-right ul li span.glyphicon {
-  font-size: 0.8em;
-  /*margin-right: 6px;*/
 }
 
 /*--//about--*/
@@ -246,38 +224,3 @@ ul.navbar-nav li a:hover, ul.navbar-nav li a.active, ul.navbar-nav li a:focus {
   -o-transform: scale(1.2);
   -ms-transform: scale(1.2);
 }
-
-/*--//work--*/
-
-/*!*--education--*!*/
-/*.education .work-info h5 {*/
-/*  color: #008B8B;*/
-/*  border-color: #008B8B;*/
-/*}*/
-/*!*--//education--*!*/
-/*!*--skills--*!*/
-/*.skills{*/
-/*  background:#000;*/
-/*}*/
-/*.bar-grids {*/
-/*  padding: 0 4em;*/
-/*}*/
-/*.progress {*/
-/*  height: 10px;*/
-/*  margin-bottom: 2.2em;*/
-/*  background-color: #2F2C06;*/
-/*}*/
-/*.progress-bar {*/
-/*  background-color: #766E04;*/
-/*}*/
-/*.bar-grids h6 {*/
-/*  font-size: 1.1em;*/
-/*  color: #fff;*/
-/*  margin-bottom: 0.6em;*/
-/*}*/
-/*.bar-grids h6 span {*/
-/*  float: right;*/
-/*  font-size: 0.9em;*/
-/*}*/
-/*!*--//skills--*!*/
-

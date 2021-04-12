@@ -17,7 +17,9 @@ export class FooterComponent implements OnInit {
       twitter: 'https://twitter.com/manishrw',
       skype: 'skype:manishsvnit007',
       github: 'https://github.com/manishrw/',
-      email: 'mailto:manishsvnit007@gmail.com'
+      email: 'mailto:manishsvnit007@gmail.com',
+      instagram: 'https://instagram.com/manishrw',
+      strava: 'https://www.strava.com/athletes/28884928'
     };
   }
 

@@ -34,7 +34,9 @@ export class ProfileComponent implements OnInit {
       twitter: 'https://twitter.com/manishrw',
       skype: 'skype:manishsvnit007',
       github: 'https://github.com/manishrw/',
-      email: 'mailto:manishsvnit007@gmail.com'
+      email: 'mailto:manishsvnit007@gmail.com',
+      instagram: 'https://instagram.com/manishrw',
+      strava: 'https://www.strava.com/athletes/28884928'
     };
     this.userData = {
       name: 'Manish Wadhwani',
@@ -47,20 +49,21 @@ export class ProfileComponent implements OnInit {
         "I'm a senior backend developer at <a style='color: darkturquoise;' href=\"https://www.ey.com\">EY (Ernst & Young)</a> - Product engineering group."
     };
     this.awards = [
+      'Published a paper titled \'A Survey of the Privacy Homomorphism in Wireless Sensor Networks\', 2013',
       'Runner up in IBM Techathon, 2013',
       'AIR 63 in ACM ICPC regionals finals, 2012',
       'AIR 10 in Ethical Hacking contest InCTF, 2012',
-      'TOP 6 in IBM Global Entrepeneur program, 2015',
+      'TOP 6 in IBM Global Entrepreneur program, 2015',
       'Winners of ACM Quest programming, MindBend, 2013 ',
       'IBM Deep Skill Award for Q4, 2014'
     ];
-    this.aboutUs = '<p>A senior software engineer with 8+ years of experience in Distributed Systems, Web Applications, Machine Learning. Although, he\'s a programming polyglot, he tends to favour  Java, Python, Node.JS, and proficient in Databases and Cloud technologies. Manish graduated with Master\'s in Computer Science from Georgia Tech with specialization in Computing Systems. He completed his B.Tech from Sardar Vallabhbahi National Institute of Technology, Surat in Computer Engineering. <br><br>He has been associated and involved with computers throughout his life. While he is not coding, he likes to play badminton, trek mountains, and ride bike. He also likes to binge TV series in his spare time.</p>';
-    //<br>Specialties: <ul><li>Distributed systems</li><li>Algorithm design</li><li>Web application development</li><li>Machine Learning</li></ul></p>';
+    this.aboutUs = '<p>A senior software engineer with 8+ years of experience in Distributed Systems, Web Applications, and Machine Learning. Although, he\'s a programming polyglot, he tends to favour  Java, Python, Node.JS, and proficient in Databases and Cloud technologies. Manish graduated with Master\'s in Computer Science from Georgia Tech with specialization in Computing Systems. He completed his B.Tech from National Institute of Technology, Surat in Computer Engineering. <br><br>He has been associated and involved with computers throughout his life. While he is not coding, he likes to play badminton, trek mountains, and ride bike. Follow him on <a style="color: darkcyan" href="https://www.strava.com/athletes/28884928"> Strava </a>. He also likes to binge TV series in his spare time.</p>';
+
     this.workInfo = [{
       year: 'Nov 2018 - Present',
       company: 'EY Product Engineering',
       role: 'Senior Software Engineer',
-      description: '<p><b>Access-mgt service:</b> Designed and developed centralized access-mgt service which supports all the features of XACML 3.0 and modeled upon ABAC.<br><b>Generic Notification service: </b> Designed and developed to be reliable, scalable and multi-tenant platform to send notifications to the clients.</p><br>Technologies used: Java, Spring Boot, Cassandra, SQL Server, Kubernetes, Docker, NodeJS'
+      description: '<p><b>Access-mgt service:</b> Designed and developed centralized access-mgt service which supports all the features of XACML 3.0 and modeled upon ABAC.<br><b>Generic Notification service: </b> Designed and developed the service to be reliable, scalable and multi-tenant platform to send various types of notifications to the clients.</p><br>Technologies used: Java, Spring Boot, Cassandra, SQL Server, Kubernetes, Docker, NodeJS'
     }, {
       year: 'July 2016 - Nov 2018 ',
       company: ' Microsoft R&D India Pvt. Ltd. ',
