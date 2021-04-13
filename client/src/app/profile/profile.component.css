@@ -33,8 +33,13 @@
   left: -10%;
 }
 
+.header-left {
+  padding-top: 1em;
+}
+
 .header-right {
   padding-left: 3em;
+  padding-top: 1em;
 }
 
 .header-right h1 {
