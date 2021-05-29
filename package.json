@@ -18,6 +18,7 @@
   },
   "scripts": {
     "start": "npm run build; npm run server",
+    "start-dev": "npm run build; npm run server-dev",
     "server": "node server",
     "server-dev": "nodemon server",
     "build": "cd client; npm install; npm run build",
