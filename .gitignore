@@ -1,0 +1,10 @@
+build/
+*.log
+node_modules*
+public/libs/*
+*.patch
+package-lock.json
+.npmrc
+.idea*
+*.json
+.DS_Store
