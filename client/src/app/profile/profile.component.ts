@@ -46,7 +46,8 @@ export class ProfileComponent implements OnInit {
         state: 'KA, India'
       },
       description: 'I\'m an India-based software developer who specializes in large-scale distributed systems for the web.\n' +
-      'I\'m a senior software engineer at <a style=\'color: darkturquoise;\' href="https://www.ey.com">Microsoft IDC</a> - Azure SDN team.'
+        // tslint:disable-next-line:max-line-length
+      'I\'m a senior software engineer at <a style=\'color: darkturquoise;\' href="https://www.microsoft.com/en-in/msidc/">Microsoft IDC</a> - Azure SDN team.'
     };
     this.awards = [
       'Published a paper titled \'A Survey of the Privacy Homomorphism in Wireless Sensor Networks\', 2013',
