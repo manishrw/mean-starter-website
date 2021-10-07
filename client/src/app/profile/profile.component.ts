@@ -1,5 +1,5 @@
 import {Component, OnInit, Pipe, PipeTransform} from '@angular/core';
-import {DomSanitizer} from '@angular/platform-browser'
+import {DomSanitizer} from '@angular/platform-browser';
 
 @Pipe({name: 'safeHtml'})
 export class SafeHtmlPipe implements PipeTransform {
@@ -45,8 +45,9 @@ export class ProfileComponent implements OnInit {
         street: 'Bangalore',
         state: 'KA, India'
       },
-      description: "I'm an India-based software developer who specializes in large-scale distributed systems for the web.\n" +
-        "I'm a senior backend developer at <a style='color: darkturquoise;' href=\"https://www.ey.com\">EY (Ernst & Young)</a> - Product engineering group."
+      description: 'I\'m an India-based software developer who specializes in large-scale distributed systems for the web.\n' +
+        // tslint:disable-next-line:max-line-length
+      'I\'m a senior software engineer at <a style=\'color: darkturquoise;\' href="https://www.microsoft.com/en-in/msidc/">Microsoft IDC</a> - Azure SDN team.'
     };
     this.awards = [
       'Published a paper titled \'A Survey of the Privacy Homomorphism in Wireless Sensor Networks\', 2013',
@@ -57,32 +58,44 @@ export class ProfileComponent implements OnInit {
       'Winners of ACM Quest programming, MindBend, 2013 ',
       'IBM Deep Skill Award for Q4, 2014'
     ];
+
+    // tslint:disable-next-line:max-line-length
     this.aboutUs = '<p>Manish is a senior software engineer with 8+ years of experience in Distributed Systems, Web Applications, and Machine Learning. Although, he\'s a programming polyglot, he tends to favour  Java, Python, Node.JS and is proficient in Databases and Cloud technologies. He graduated with Master\'s in Computer Science from <a href="https://omscs.gatech.edu/" style="color: darkcyan">Georgia Tech</a> with specialization in Computing Systems. He completed his B.Tech from <a href="https://www.svnit.ac.in/" style="color: darkcyan">National Institute of Technology, Surat</a> in Computer Engineering. <br><br>He has been associated and involved with computers throughout his life. While he is not coding, he likes to play badminton, trek mountains, and ride bike. Follow him on <a style="color: darkcyan" href="https://www.strava.com/athletes/28884928"> Strava </a>. He also likes to binge TV series in his spare time.</p>';
 
     this.workInfo = [{
-      year: 'Nov 2018 - Present',
+      year: 'Aug 2021 - Present',
+      company: 'Microsoft IDC - Azure SDN',
+      role: 'Senior Software Engineer',
+      description: 'I\'m part of Azure Networking - SDN team, working on backend side of things.'
+    }, {
+      year: 'Nov 2018 - Jul 2021',
       company: 'EY Product Engineering',
       role: 'Senior Software Engineer',
+      // tslint:disable-next-line:max-line-length
       description: '<p><b>Access-mgt service:</b> Designed and developed centralized access-mgt service which supports all the features of XACML 3.0 and modeled upon ABAC.<br><br><b>Generic Notification service: </b> Designed and developed the service to be reliable, scalable and multi-tenant platform to send various types of notifications to the clients.</p><br><b>Technologies used:</b> Java, Spring Boot, Cassandra, MySQL, Kubernetes, Docker, NodeJS, RabbitMQ, Redis'
     }, {
       year: 'July 2016 - Nov 2018 ',
       company: ' Microsoft IDC ',
       role: ' Software Engineer 2',
+      // tslint:disable-next-line:max-line-length
       description: '<p><b>Bing Instant Answer:</b> Designed and developed the pipeline to auto extract and rank Answers for queries using machine learning for a segment in Bing. It helped the coverage to gain by ~90% for automated answers.<br><br><b>Help Carousel:</b> ​ Designed and developed the system to generate and auto refresh the help topics in Carousel. The project also required clustering techniques to group similar answers into the same buckets.<br><br><b>Broken Links detection:</b> ​ Developed a system to catch broken links for the shipped experience. This helped to decrease the negative experience caused by stale links.</p><br><b>Technologies used:</b> C#, Cosmos, Python, Azure ML, Scope'
     }, {
       year: 'April 2015 - June 2016 ',
       company: ' Medibox Technologies',
       role: ' Software Developer',
+      // tslint:disable-next-line:max-line-length
       description: '<p>Medibox is a scalable digital platform for the healthcare industry. Developed the blog and newsroom  module for the platform.<br><br>Developed the business intelligence framework using Node.JS, Mongo DB, and ELK stack. Created a dashboard to track product performance metrics across campaigns.<br><br>Optimized search algorithms across the system using Elastic search. Implemented data mapping using fuzzy logic. Develop a web interface for data enrichment with Feedback Intelligence.<br><br><b>Open Source Contribution:</b> Updated Node.JS module “node-ultimate” by integrating elastic search as a default setup for searching purposes.\n</p><p><b>Technologies used:</b> Mongo DB, Node.JS, AngularJS, ElasticSearch, Nginx, ELK stack.'
     }, {
       year: 'June 2013 - April 2015 ',
       company: ' IBM India Pvt. Ltd.',
       role: ' Software Developer',
+      // tslint:disable-next-line:max-line-length
       description: '<p>Developed and maintained business reports for a shipping giant. The reports helped customer gain better insights for demurrage & detention charges, vessel tracking, job booking and vessel filling optimisation. Developed a tool which automates account reset and creation process for client users with Python and Unix.</p><p><b>Technologies used:</b> Python, Unix shell scripting, SQL, COGNOS, Qlikview.'
     }, {
       year: 'July 2011 - May 2012 ',
       company: ' ACM chapters, NIT, Surat ',
       role: ' Executive Committee Member',
+      // tslint:disable-next-line:max-line-length
       description: '<p>Organized and Conducted various seminars, competitions, hackathons and training sessions. Collaborated with fellow ACM mates to participate in competitive programming and develop various applications.</p>'
     }];
 
@@ -90,21 +103,25 @@ export class ProfileComponent implements OnInit {
       title: 'M.S. in  Computer Science',
       univ: ' Georgia Tech, AL, US',
       year: '2018 - 2020',
+      // tslint:disable-next-line:max-line-length
       description: '<p>Specialisation in Computing Systems.<br><b>Courses:</b> Grad Intro to OS, Intro to High Performance computing, Advanced OS, High Performance Computing Architecture, Graduate Algorithms, Reinforcement learning, Information Security, Machine learning for Trading, AI 4 Robotics, AI - ethics, bias and society.</p>'
     }, {
       title: 'Machine Learning Certification',
       univ: ' Stanford Online course - Coursera',
       year: '2016',
+      // tslint:disable-next-line:max-line-length
       description: '<p>Completed training in machine learning course by Andrew NG from Stanford University and earned a certificate. The course provided a broad introduction to machine learning, data mining, and statistical pattern recognition.</p>'
     }, {
       title: 'B.Tech in Computer Engineering',
       univ: ' NIT, Surat, GJ, India ',
       year: '2009 - 2013',
+      // tslint:disable-next-line:max-line-length
       description: '<p><b>Courses:</b> Data Structures, Algorithm analysis and design, Theoretical Computer Science, Operating Systems, Systems software, Microprocessors & Interfacing Techniques, Information systems, Network & system security, Security in Embedded systems, Distributed systems, Engineering Mathematics, and Artificial Intelligence.</p><p> Project on Evaluation of Privacy Homomorphic algorithms in Wireless Sensor Networks. Published a paper in IJCA for the same. Presented a seminar on Secure boot</p>'
     }, {
       title: 'Java professional course',
       univ: ' Aptech Edu. Ltd. ',
       year: '2009',
+      // tslint:disable-next-line:max-line-length
       description: '<p>Completed the course of JAVA Core developer from Aptech in 2009. The course provided an understanding of core OOPS principle, advanced data structures and principles of software design.</p>'
     }];
 

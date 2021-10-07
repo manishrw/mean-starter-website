@@ -10,7 +10,6 @@ This repo is a Single Page application based on MEAN stack. It's bundled to get 
 
 Use this starter kit to build any MEAN stack application you like.
 
-If you have any questions or requests, email us at [manishrw](mailto:manishsvnit007@gmail.com) and we'll keep updating this to make it perfect.
+If you have any questions or requests, email me [here](mailto:manishsvnit007@gmail.com) and we'll keep updating this to make it perfect.
 
-Inspired from [starter-node-angular](https://github.com/scotch-io/starter-node-angular) from [chris@scotch.io](mailto:chris@scotch.io).
 
