@@ -60,13 +60,14 @@ export class ProfileComponent implements OnInit {
     ];
 
     // tslint:disable-next-line:max-line-length
-    this.aboutUs = '<p>Manish is a senior software engineer with 8+ years of experience in Distributed Systems, Web Applications, and Machine Learning. Although, he\'s a programming polyglot, he tends to favour  Java, Python, Node.JS and is proficient in Databases and Cloud technologies. He graduated with Master\'s in Computer Science from <a href="https://omscs.gatech.edu/" style="color: darkcyan">Georgia Tech</a> with specialization in Computing Systems. He completed his B.Tech from <a href="https://www.svnit.ac.in/" style="color: darkcyan">National Institute of Technology, Surat</a> in Computer Engineering. <br><br>He has been associated and involved with computers throughout his life. While he is not coding, he likes to play badminton, trek mountains, and ride bike. Follow him on <a style="color: darkcyan" href="https://www.strava.com/athletes/28884928"> Strava </a>. He also likes to binge TV series in his spare time.</p>';
+    this.aboutUs = '<p>I am a senior software engineer with 9+ years of experience in Distributed Systems, Web Applications, and Machine Learning. Although, a programming polyglot, I specialize in  Java, Python, Node.JS and is proficient in Databases and Cloud technologies. I graduated with Master\'s in Computer Science from <a href="https://omscs.gatech.edu/" style="color: darkcyan">Georgia Tech</a> with specialization in Computing Systems. I completed my B.Tech from <a href="https://www.svnit.ac.in/" style="color: darkcyan">National Institute of Technology, Surat</a> in Computer Engineering. <br><br>I like to spend my free time playing badminton, binge-watching TV series. I am always up for running, cycling, and trekking. Follow me on <a style="color: darkcyan" href="https://www.strava.com/athletes/28884928"> Strava </a>. </p>';
 
     this.workInfo = [{
       year: 'Aug 2021 - Present',
       company: 'Microsoft IDC - Azure SDN',
       role: 'Senior Software Engineer',
-      description: 'I\'m part of Azure Networking - SDN team, working on backend side of things.'
+      // tslint:disable-next-line:max-line-length
+      description: 'I\'m part of Azure Networking - SDN team, enabling customers to realize and control the network they desire for their workload in the Cloud.'
     }, {
       year: 'Nov 2018 - Jul 2021',
       company: 'EY Product Engineering',

@@ -1,6 +1,7 @@
-# MEAN Stack based SPA for Personal website.
+# MEAN Stack based Web Application
 
-This repo is a Single Page application based on MEAN stack. It's bundled to get started for a personal website.
+This project is a Web application based on MEAN stack. It's bundled to get started for a personal website.
+
 ## Installation
 1. Download the repository. Make sure [node](https://nodejs.org/en/download/) v14 LTS and npm are installed.
 2. Install npm modules: `npm install`
@@ -10,6 +11,6 @@ This repo is a Single Page application based on MEAN stack. It's bundled to get 
 
 Use this starter kit to build any MEAN stack application you like.
 
-If you have any questions or requests, email me [here](mailto:manishsvnit007@gmail.com) and we'll keep updating this to make it perfect.
+If you have any questions or requests, email me [here](mailto:manishsvnit007@gmail.com), and we'll keep updating this to make it perfect.
 
 
