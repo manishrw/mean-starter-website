@@ -50,13 +50,14 @@ export class ProfileComponent implements OnInit {
       'I\'m a senior software engineer at <a style=\'color: darkturquoise;\' href="https://www.microsoft.com/en-in/msidc/">Microsoft IDC</a> - Azure SDN team.'
     };
     this.awards = [
-      'Published a paper titled \'A Survey of the Privacy Homomorphism in Wireless Sensor Networks\', 2013',
-      'Runner up in IBM Techathon, 2013',
-      'AIR 63 in ACM ICPC regionals finals, 2012',
-      'AIR 10 in Ethical Hacking contest InCTF, 2012',
+      'Star performer for the year award, Q3 2020',
       'TOP 6 in IBM Global Entrepreneur program, 2015',
+      'IBM Deep Skill Award for Q4, 2014',
+      'Runner up in IBM Techathon, 2013',
+      'Published a paper titled \'A Survey of the Privacy Homomorphism in Wireless Sensor Networks\', 2013',
       'Winners of ACM Quest programming, MindBend, 2013 ',
-      'IBM Deep Skill Award for Q4, 2014'
+      'AIR 63 in ACM ICPC regionals finals, 2012',
+      'AIR 10 in Ethical Hacking contest InCTF, 2012'
     ];
 
     // tslint:disable-next-line:max-line-length
@@ -67,7 +68,7 @@ export class ProfileComponent implements OnInit {
       company: 'Microsoft IDC - Azure SDN',
       role: 'Senior Software Engineer',
       // tslint:disable-next-line:max-line-length
-      description: 'I\'m part of Azure Networking - SDN team, enabling customers to realize and control the network they desire for their workload in the Cloud.'
+      description: '<p>I\'m part of Azure Networking - SDN team, enabling customers to realize and control the network they desire for their workload in the Cloud.<br><br><b>Technologies used:</b> C#, Azure Cosmos DB, Azure Service fabric, Node.js</p>'
     }, {
       year: 'Nov 2018 - Jul 2021',
       company: 'EY Product Engineering',
@@ -79,7 +80,7 @@ export class ProfileComponent implements OnInit {
       company: ' Microsoft IDC ',
       role: ' Software Engineer 2',
       // tslint:disable-next-line:max-line-length
-      description: '<p><b>Bing Instant Answer:</b> Designed and developed the pipeline to auto extract and rank Answers for queries using machine learning for a segment in Bing. It helped the coverage to gain by ~90% for automated answers.<br><br><b>Help Carousel:</b> ​ Designed and developed the system to generate and auto refresh the help topics in Carousel. The project also required clustering techniques to group similar answers into the same buckets.<br><br><b>Broken Links detection:</b> ​ Developed a system to catch broken links for the shipped experience. This helped to decrease the negative experience caused by stale links.</p><br><b>Technologies used:</b> C#, Cosmos, Python, Azure ML, Scope'
+      description: '<p><b>Bing Instant Answer:</b> Designed and developed the pipeline to auto extract and rank Answers for queries using machine learning for a segment in Bing. It helped the coverage to gain by ~90% for automated answers.<br><br><b>Help Carousel:</b> ​ Designed and developed the system to generate and auto refresh the help topics in Carousel. The project also required clustering techniques to group similar answers into the same buckets.<br><br><b>Broken Links detection:</b> ​ Developed a system to catch broken links for the shipped experience. This helped to decrease the negative experience caused by stale links.</p><br><b>Technologies used:</b> C#, Cosmos BigData, Python, Azure ML, Scope'
     }, {
       year: 'April 2015 - June 2016 ',
       company: ' Medibox Technologies',
@@ -105,7 +106,7 @@ export class ProfileComponent implements OnInit {
       univ: ' Georgia Tech, AL, US',
       year: '2018 - 2020',
       // tslint:disable-next-line:max-line-length
-      description: '<p>Specialisation in Computing Systems.<br><b>Courses:</b> Grad Intro to OS, Intro to High Performance computing, Advanced OS, High Performance Computing Architecture, Graduate Algorithms, Reinforcement learning, Information Security, Machine learning for Trading, AI 4 Robotics, AI - ethics, bias and society.</p>'
+      description: '<p>Specialisation in Computing Systems.<br><br><b>Courses:</b> Grad Intro to OS, Intro to High Performance computing, Advanced OS, High Performance Computing Architecture, Graduate Algorithms, Reinforcement learning, Information Security, Machine learning for Trading, AI 4 Robotics, AI - ethics, bias and society.</p>'
     }, {
       title: 'Machine Learning Certification',
       univ: ' Stanford Online course - Coursera',

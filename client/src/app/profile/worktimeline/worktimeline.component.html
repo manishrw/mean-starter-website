@@ -2,25 +2,8 @@
   <div class="page-header">
     <h3 class="title">Work Experience</h3>
   </div>
-  <ul class="timeline" *ngFor="let work of workInfo; let index = index">
-    <li *ngIf="index % 2 === 0">
-      <div class="timeline-badge">
-        <fa-icon [icon]="['fas', 'briefcase']"></fa-icon>
-      </div>
-      <div class="timeline-panel">
-        <div class="timeline-heading">
-          <h4 class="timeline-title">{{work.role}}</h4>
-          <h4 class="timeline-title"><span style="color:darkcyan">@</span> {{work.company}}</h4>
-          <p>
-            <small class="text-muted">
-              <fa-icon [icon]="['fas', 'clock']"></fa-icon>
-              {{work.year}}</small>
-          </p>
-        </div>
-        <div class="timeline-body" [innerHTML]="work.description"></div>
-      </div>
-    </li>
-    <li class="timeline-inverted" *ngIf="index % 2 === 1">
+  <ul class="timeline" *ngFor="let work of workInfo;">
+    <li class="timeline-inverted">
       <div class="timeline-badge">
         <fa-icon [icon]="['fas', 'briefcase']"></fa-icon>
       </div>

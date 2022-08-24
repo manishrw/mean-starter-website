@@ -24,5 +24,9 @@
     "build": "cd client; npm install; npm run build",
     "client": "cd client; npm run start",
     "client-dev": "cd client; npm run start-dev"
+  },
+  "devDependencies": {
+    "eslint": "^8.22.0",
+    "eslint-config-google": "^0.14.0"
   }
 }
